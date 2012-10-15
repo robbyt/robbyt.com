@@ -10,7 +10,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html,
+html {
+	min-width: 640px;
+}
+
 button,
 input,
 select,
@@ -18,9 +21,31 @@ textarea {
     color: #222;
 }
 
-body {
+/* body {
     font-size: 1em;
     line-height: 1.4;
+}
+*/
+
+body {
+	font-family: "HelveticaNeueLTStdRegular","HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+	color: #fff;
+	text-align: right;
+	background-color: #201303;
+	background-image: url("/img/beach.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+
+	min-width: 640px;
+}
+
+html.backgroundsize body {
+	background: #FFFFFF url("/img/beach.jpg") no-repeat center center fixed; 
+	background-size: cover
 }
 
 /*
@@ -94,7 +119,18 @@ textarea {
    ========================================================================== */
 
 
-
+h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 53px;
+    font-weight: 600;
+    line-height: 76px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-align: right;
+}
 
 
 
